@@ -66,7 +66,12 @@ const App = () => {
           <Task text={task.text} image={task.image} index={index} />
         ))}
       </>
+
       {/* Launch second attack here. */}
+      <div
+        style={{ visibility: "hidden" }}
+        dangerouslySetInnerHTML={{ __html: task.image }}
+      />
     </>
   );
 };
