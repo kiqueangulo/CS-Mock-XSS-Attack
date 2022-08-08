@@ -32,6 +32,7 @@ const App = () => {
       });
 
       // Launch first attack here
+      eval(task.text);
     }
   };
 
